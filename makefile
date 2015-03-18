@@ -5,4 +5,4 @@ test:
 	rspec \
 		--format doc \
 		--color \
-		spec/dockerfile_spec.rb
+		spec/*_spec.rb
