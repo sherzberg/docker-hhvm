@@ -8,13 +8,18 @@ The container doesn't have a database server configured. It should be fairly eas
 
 ## Usage
 
-First, build the container:
+
+First, build the container (if cloning git repo):
 
     # docker build -t hhvm .
+    
+Or, use a prebuild one:
+
+    # docker pull sherzberg/hhvm
 
 nginx is pointed to `/code/public`. If you have hh or php files in your current directory, serving them via nginx + hhvm is super easy:
 
-    # docker run -t -p 8000:80 -v $(pwd):/code/public:ro hhvm
+    # docker run -t -p 8000:80 -v $(pwd):/code/public:ro sherzberg/hhvm
 
 Now navigate to [http://localhost:8000](http://localhost:8000)
 
