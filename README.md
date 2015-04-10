@@ -25,7 +25,7 @@ Now navigate to [http://localhost:8000](http://localhost:8000)
 
 ## Development
 
-There are tests written to ensure the Dockerfile is built correctly and a few integratino tests to ensure
+There are tests written to ensure the Dockerfile is built correctly and a few integration tests to ensure
 php and hh are served correctly with the default nginx config. The tests rely on Ruby's rspec and docker-api.
 
 	# bundle install
